@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+    .group:hover .group-hover\\:block {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-[#001133] text-white font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white shadow-md py-4 px-6 flex justify-between items-center fixed top-0 left-0 w-full z-50">
+    <h1 class="text-2xl font-bold">My Portfolio</h1>
+    <nav>
+      <ul class="flex space-x-6 text-lg items-center">
+        <li><a href="myport.html" class="hover:text-gray-300">About Me</a></li>
+        <li><a href="resume.html" class="hover:text-gray-300">Resume</a></li>
+        <li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>
+        <li><a href="certifications.html" class="hover:text-gray-300">Certifications</a></li>
+        <li class="relative group">
+          <a href="#" class="hover:text-gray-300">Others</a>
+          <ul class="absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-white text-black shadow-md rounded-lg py-2 space-y-2 w-44 hidden group-hover:block z-50">
+            <li><a href="blogs.html" class="block px-4 py-2 hover:bg-gray-200">Blogs</a></li>
+            <li><a href="experience.html" class="block px-4 py-2 hover:bg-gray-200">Experience</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="shiv cvfinale.pdf" download class="bg-white text-blue-600 font-semibold px-4 py-2 rounded hover:bg-gray-100 transition duration-300">
+            Download
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-5xl mx-auto px-6 pt-32 pb-16 space-y-16">
+    <!-- Education -->
+    <section>
+      <h2 class="text-2xl font-bold border-b border-gray-400 pb-2 mb-4">Education</h2>
+      <p class="text-lg">
+        🎓 <strong>B.Tech in Computer Science and Technology</strong><br>
+        Lovely Professional University, Punjab<br>
+        <span class="text-gray-400 text-sm">Expected Graduation: 2026</span>
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2 class="text-2xl font-bold border-b border-gray-400 pb-2 mb-4">Skills</h2>
+      <ul class="grid grid-cols-2 gap-2 list-disc list-inside text-lg">
+        <li>Languages: C++, JavaScript, SQL</li>
+        <li>Frontend: React.js, HTML, CSS</li>
+        <li>Backend: Node.js, Express.js</li>
+        <li>Databases: MongoDB, MySQL</li>
+        <li>Version Control: Git, GitHub</li>
+        <li>Problem Solving: Data Structures & Algorithms</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2 class="text-2xl font-bold border-b border-gray-400 pb-2 mb-4">Projects</h2>
+      <div class="space-y-4">
+        <div>
+          <h3 class="text-xl font-semibold">Travel Website | HTML, CSS, JavaScript</h3>
+          <p class="text-gray-300">• A platform where users can search, book, and pay for flights, hotels, and travel packages, with filters for different destinations and travel dates.</p>
+          <p class="text-gray-300">• Includes user accounts, booking history, travel itineraries, and integration with external APIs for flight and hotel bookings.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Real-Time Chatting App | MongoDB, Express, NodeJS, EJS</h3>
+          <p class="text-gray-300">• Designed and developed a real-time chat application using Node.js and Socket.IO.</p>
+          <p class="text-gray-300">• Developed a robust backend with Node.js and Express.js, ensuring efficient data handling and seamless front-end integration.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">URL Shortener | JavaScript, React.js, Node.js, Express.js</h3>
+          <p class="text-gray-300">• Developed a URL Shortening Web Application that efficiently converts long URLs into short, manageable links while tracking usage statistics. The system generates unique short codes for each URL and ensures seamless redirection to the original link.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section>
+      <h2 class="text-2xl font-bold border-b border-gray-400 pb-2 mb-4">Certifications</h2>
+      <ul class="list-disc list-inside text-lg">
+        <li>Digital Skills for Work and Life – Accenture (FutureLearn)</li>
+        <li>Data Analytics with Python – Internship Program</li>
+        <li>Introduction to Tableau – Coursera</li>
+      </ul>
+    </section>
+
+    <!-- Extracurriculars -->
+    <section>
+      <h2 class="text-2xl font-bold border-b border-gray-400 pb-2 mb-4">Extracurriculars</h2>
+      <p class="text-lg">
+        🏅 Participated in various coding contests on LeetCode, HackerRank, and GitHub.
+      </p>
+    </section>
+  </main>
+
+</body>
+</html>
